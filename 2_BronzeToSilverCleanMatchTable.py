@@ -91,7 +91,8 @@ silver_df.write\
     .option('overwriteSchema',"true")\
     .saveAsTable('workspace.default.cricket_silver_current_matches')
 
-print("Silver Table Created Successfully!!!")
+
+print("SILVER TABLE CREATED SUCCESSFULLY!!!")
 
 
 # COMMAND ----------
