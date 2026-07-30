@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "5"
+# ///
 # DBTITLE 1,Importing Libraries
 import json
 from pyspark.sql.functions import *
@@ -40,6 +44,7 @@ for match in matches:
         s2 = score[1]
         score_2 = f"{s2.get('r', 0)}/{s2.get('w', 0)} in {s2.get('o', 0)} overs"
     
+    silver_rows = []
     silver_rows.append({
     "match_id": match.get("id"),
     "match_name": match.get("name"),
